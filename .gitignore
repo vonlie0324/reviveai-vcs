@@ -1,0 +1,107 @@
+# Python
+__pycache__/
+*.py[cod]
+backend/.venv/
+backend/.pytest_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/*.tsbuildinfo
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.autonomous.example
+!.env.soundtrack.example
+!.env.v35.example
+!.env.veo-dev.example
+!.env.video-cost.example
+*env.yaml
+*env.yml
+*env*.local
+
+# Credentials
+*.json
+!package.json
+!tsconfig.json
+!*.example.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Generated media and temporary files
+*.zip
+*.mp3
+*.wav
+*.mp4
+*.mov
+*.webm
+.reviveai_checkpoints/
+recovery-previews/
+
+# Runtime-generated soundtrack data
+backend/music_library/tenants/
+backend/music_library/youtube_audio_library/tenants/
+backend/music_library/youtube_audio_library/tracks/
+backend/music_library/tracks/
+
+# Historical recovery documentation
+V*_README.md
+LEGACY_RECOVERY*.md
+RECOVERY_*.md
+backend/docs/recovery/
+# ==========================================
+# AI BUILDER CUP — PUBLIC REPOSITORY EXCLUSIONS
+# ==========================================
+
+# All environment files, copies and examples
+.env
+.env.*
+.env *
+**/.env
+**/.env.*
+**/.env *
+
+# All ZIP archives
+*.zip
+**/*.zip
+
+# All Markdown files
+*.md
+**/*.md
+
+# Credentials and private keys
+*service-account*.json
+*service_account*.json
+*credentials*.json
+*firebase-adminsdk*.json
+*oauth*token*.json
+application_default_credentials.json
+*.pem
+*.p12
+*.p8
+*.key
+
+# Local runtime and generated files
+.reviveai_checkpoints/
+recovery-previews/
+frontend/.firebase/
+
+# Python
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+
+# Frontend
+node_modules/
+dist/
+build/
+coverage/
+

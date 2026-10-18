@@ -1,0 +1,481 @@
+/* ReviveAI Autonomous Operations — compact scanning + progressive disclosure.
+   This stylesheet intentionally overrides the existing global autonomy styles
+   without changing the rest of the application. */
+
+.autonomy-hero-summary {
+  max-width: 720px;
+  margin: 8px 0 0;
+  color: var(--autonomy-muted, #aab3c9);
+  line-height: 1.45;
+}
+
+.autonomy-current-summary {
+  display: block;
+  margin-top: 4px;
+  color: var(--autonomy-muted, #aab3c9);
+  line-height: 1.42;
+}
+
+.autonomy-event-compact {
+  min-height: 0;
+}
+
+.autonomy-event-compact .autonomy-event-body {
+  min-width: 0;
+}
+
+.autonomy-event-toggle {
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 10px;
+  align-items: start;
+  text-align: left;
+  cursor: pointer;
+}
+
+.autonomy-event-toggle-main {
+  min-width: 0;
+}
+
+.autonomy-event-chevron {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  border-radius: 8px;
+  color: var(--autonomy-muted-2, #7f8aa4);
+  background: rgba(255, 255, 255, .035);
+  border: 1px solid rgba(255, 255, 255, .07);
+}
+
+.autonomy-event-toggle:hover .autonomy-event-chevron {
+  color: var(--autonomy-text, #f7f8fd);
+  border-color: rgba(169, 155, 255, .22);
+  background: rgba(141, 123, 255, .08);
+}
+
+.autonomy-event-video-title.compact {
+  margin-top: 7px;
+  padding: 6px 8px;
+  min-width: 0;
+}
+
+.autonomy-event-video-title.compact > span {
+  display: none;
+}
+
+.autonomy-event-video-title.compact strong {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.autonomy-event-summary-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 7px;
+}
+
+.autonomy-event-summary-chips span {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 4px;
+  padding: 4px 7px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .08);
+  background: rgba(255, 255, 255, .025);
+  color: var(--autonomy-muted, #aab3c9);
+  font-size: 10px;
+  line-height: 1.2;
+}
+
+.autonomy-event-summary-chips b {
+  color: var(--autonomy-muted-2, #7f8aa4);
+  font-weight: 700;
+}
+
+.autonomy-event-expanded {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, .07);
+}
+
+.autonomy-event-expanded > p {
+  margin: 0 0 9px;
+  color: var(--autonomy-muted, #aab3c9);
+  line-height: 1.5;
+}
+
+.autonomy-event-compact:not(.expanded) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.autonomy-event-compact.expanded {
+  border-color: rgba(141, 123, 255, .18);
+  background: rgba(141, 123, 255, .025);
+}
+
+.autonomy-approval-meta.compact {
+  margin-top: 10px;
+}
+
+.autonomy-publication-compact-details {
+  margin-top: 8px !important;
+}
+
+.autonomy-publication-compact-details > div {
+  padding: 4px 0 !important;
+}
+
+.autonomy-release-history {
+  margin-top: 14px;
+}
+
+.autonomy-publication-history-list {
+  display: grid;
+  gap: 6px;
+}
+
+.autonomy-history-row {
+  padding: 10px 11px !important;
+}
+
+.autonomy-history-date {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 7px;
+  color: var(--autonomy-muted-2, #7f8aa4);
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.autonomy-history-date svg {
+  color: var(--autonomy-purple, #a99bff);
+  flex: 0 0 auto;
+}
+
+.autonomy-history-performance {
+  margin-top: 7px;
+  color: var(--autonomy-muted, #aab3c9);
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.autonomy-history-row .autonomy-publication-head strong {
+  line-height: 1.35;
+}
+
+.autonomy-history-row .autonomy-publication-head > div {
+  min-width: 0;
+}
+
+.autonomy-history-row .autonomy-publication-head > div > strong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+@media (max-width: 760px) {
+  .autonomy-event-toggle {
+    grid-template-columns: minmax(0, 1fr) 28px;
+  }
+
+  .autonomy-event-summary-chips {
+    gap: 4px;
+  }
+
+  .autonomy-event-summary-chips span {
+    font-size: 9px;
+  }
+
+  .autonomy-history-row {
+    padding: 9px !important;
+  }
+}
+
+
+/* v2 — tighter operations hierarchy */
+.autonomy-hero {
+  padding: 18px 20px !important;
+  gap: 18px !important;
+  min-height: 0 !important;
+}
+
+.autonomy-hero-copy-compact {
+  align-content: center;
+}
+
+.autonomy-hero-copy-compact h2 {
+  margin: 7px 0 0 !important;
+  max-width: 760px;
+  font-size: clamp(22px, 2.2vw, 30px) !important;
+  line-height: 1.08 !important;
+}
+
+.autonomy-current-production {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 9px;
+  min-width: 0;
+  color: var(--autonomy-text, #f7f8fd);
+}
+
+.autonomy-current-production svg {
+  flex: 0 0 auto;
+  color: var(--autonomy-orange, #f7a62a);
+}
+
+.autonomy-current-production strong {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 13px;
+}
+
+.autonomy-hero-summary {
+  margin-top: 6px !important;
+  max-width: 780px;
+  font-size: 11px;
+}
+
+.autonomy-hero-controls {
+  align-content: center;
+  gap: 8px !important;
+}
+
+.autonomy-control-note {
+  min-height: 36px !important;
+}
+
+.autonomy-health-card {
+  min-height: 110px;
+}
+
+.autonomy-timeline-scroll {
+  max-height: 500px !important;
+}
+
+.autonomy-load-more-row {
+  padding-top: 8px !important;
+}
+
+.autonomy-load-more-row .secondary-button {
+  min-height: 32px;
+  padding: 6px 12px;
+  font-size: 11px;
+}
+
+.autonomy-side-column {
+  align-content: start;
+}
+
+.autonomy-disclosure-card {
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.autonomy-disclosure-card > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 13px 14px;
+  cursor: pointer;
+}
+
+.autonomy-disclosure-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.autonomy-disclosure-card > summary > span {
+  min-width: 0;
+  display: grid;
+  gap: 3px;
+}
+
+.autonomy-disclosure-card > summary strong {
+  color: var(--autonomy-text, #f7f8fd);
+  font-size: 12px;
+  line-height: 1.3;
+}
+
+.autonomy-disclosure-card > summary small {
+  color: var(--autonomy-muted-2, #7f8aa4);
+  font-size: 10px;
+}
+
+.autonomy-disclosure-card > summary > svg {
+  flex: 0 0 auto;
+  color: var(--autonomy-muted-2, #7f8aa4);
+  transition: transform .18s ease;
+}
+
+.autonomy-disclosure-card[open] > summary > svg {
+  transform: rotate(180deg);
+}
+
+.autonomy-disclosure-card[open] > summary {
+  border-bottom: 1px solid var(--autonomy-border, rgba(255,255,255,.1));
+}
+
+.autonomy-disclosure-body {
+  padding: 12px 14px 14px;
+}
+
+.autonomy-approval-card .autonomy-approval-meta {
+  margin-top: 0;
+}
+
+.autonomy-runtime-card dl {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .autonomy-hero {
+    padding: 15px !important;
+  }
+
+  .autonomy-current-production strong {
+    white-space: normal;
+  }
+
+  .autonomy-timeline-scroll {
+    max-height: 460px !important;
+  }
+}
+
+
+/* Final cleanup — remove repeated state labels and tighten scan density */
+.autonomy-health-card strong {
+  line-height: 1.25;
+}
+
+.autonomy-next-release-card strong {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.autonomy-next-release-card small {
+  margin-top: 3px;
+}
+
+.autonomy-activity-summary {
+  color: var(--autonomy-muted-2, #7f8aa4);
+  font-size: 10px;
+}
+
+.autonomy-objective-card > p {
+  display: none;
+}
+
+.autonomy-objective-card .autonomy-metric-grid {
+  margin-top: 10px;
+}
+
+.autonomy-hero-controls .autonomy-main-action {
+  margin-top: 2px;
+}
+
+.autonomy-publication-compact-details dt {
+  min-width: 70px;
+}
+
+@media (max-width: 760px) {
+  .autonomy-next-release-card strong {
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+  }
+}
+
+.autonomy-cadence-strip {
+  margin: 10px 0 12px;
+  padding: 10px 12px;
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  border-radius: 10px;
+  background: rgba(15, 23, 42, 0.28);
+}
+
+.autonomy-cadence-strip > div {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.autonomy-cadence-strip span,
+.autonomy-cadence-strip small {
+  color: var(--muted, #94a3b8);
+}
+
+.autonomy-cadence-strip strong {
+  color: var(--text, #f8fafc);
+}
+
+.autonomy-cadence-strip small {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.35;
+}
+
+.primary-performance-row dd,
+.autonomy-history-primary-performance {
+  font-weight: 700;
+  color: #c4b5fd;
+}
+
+.autonomy-history-primary-performance {
+  margin-top: 4px;
+  font-size: 11px;
+}
+
+.autonomy-primary-cohort-note {
+  margin: -4px 0 10px;
+  font-size: 11px;
+  color: var(--muted, #94a3b8);
+}
+
+/* Persistent OAuth reauthorization action, including after initial setup. */
+.autonomy-youtube-reconnect {
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid rgba(163, 145, 255, .38);
+  border-radius: 9px;
+  padding: 7px 10px;
+  background: rgba(130, 104, 239, .12);
+  color: #ddd5ff;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 650;
+  cursor: pointer;
+}
+.autonomy-youtube-reconnect:hover:not(:disabled) {
+  background: rgba(130, 104, 239, .24);
+  border-color: rgba(163, 145, 255, .65);
+}
+.autonomy-youtube-reconnect:focus-visible {
+  outline: 2px solid #a897ff;
+  outline-offset: 2px;
+}
+.autonomy-youtube-reconnect:disabled {
+  opacity: .65;
+  cursor: wait;
+}

@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "ai-projects-250716"
+  },
+  "targets": {
+    "ai-projects-250716": {
+      "hosting": {
+        "reviveai": [
+          "reviveai-b5ba7"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}

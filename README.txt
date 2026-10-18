@@ -1,0 +1,1 @@
+ReviveAI frontend replacement files. Merge under C:/reviveai. This release updates lifecycle labels, home action queue, and recorded YouTube publication visibility. It does not implement backend lifecycle locks or autonomously alter publication records. Run npm run build and verify with live backend data.

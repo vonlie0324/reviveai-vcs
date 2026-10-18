@@ -1,0 +1,48 @@
+{
+  "updated_at": "2026-09-23T00:00:00Z",
+  "tracks": [
+    {
+      "track_id": "provider-track-001",
+      "title": "Replace with licensed track title",
+      "artist": "Artist name",
+      "provider": "Your licensed music provider",
+      "platform": "TIKTOK",
+      "region": "PH",
+      "trend_rank": 12,
+      "trend_label": "Trending this week",
+      "genre": "Pop",
+      "moods": ["uplifting", "energetic"],
+      "duration_seconds": 42.0,
+      "render_mode": "EMBEDDED",
+      "local_file": "tracks/provider-track-001.mp3",
+      "source_url": "https://example.com/provider-track-001",
+      "license": {
+        "commercial_use_allowed": true,
+        "allowed_platforms": ["TIKTOK", "INSTAGRAM", "YOUTUBE"],
+        "allowed_regions": ["PH"],
+        "reference": "License/order/reference ID",
+        "expires_at": "2027-09-23T00:00:00Z"
+      }
+    },
+    {
+      "track_id": "platform-only-001",
+      "title": "Platform-only example",
+      "artist": "Artist name",
+      "provider": "Platform music library",
+      "platform": "TIKTOK",
+      "region": "PH",
+      "trend_rank": 25,
+      "trend_label": "Trending",
+      "genre": "Electronic",
+      "moods": ["modern", "bright"],
+      "render_mode": "PLATFORM_ONLY",
+      "source_url": "https://example.com/platform-only-track",
+      "license": {
+        "commercial_use_allowed": true,
+        "allowed_platforms": ["TIKTOK"],
+        "allowed_regions": ["PH"],
+        "reference": "Use from the platform's own music picker"
+      }
+    }
+  ]
+}

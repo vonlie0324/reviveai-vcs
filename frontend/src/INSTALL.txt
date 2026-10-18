@@ -1,0 +1,1 @@
+Replace frontend/src/App.tsx and frontend/src/components/ChannelCommandCenter.tsx. Run npm run build, then npm run dev. Frontend presentation/navigation only; no autopilot actions are triggered by these new labels.

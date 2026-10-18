@@ -1,0 +1,2 @@
+Replace frontend/src/App.tsx and frontend/src/components/ChannelProductionsPanel.tsx. Run npm run build.
+This patch changes DISPLAY labels only, not the stored production/checkpoint state.

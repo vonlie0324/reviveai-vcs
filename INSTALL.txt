@@ -1,0 +1,1 @@
+Replace the two full files in frontend/src (types.ts and components/ChannelCommandCenter.tsx). Run npm run build. Backend unchanged. This is a read-only frontend reconciliation improvement: uncertain records remain UNVERIFIED instead of claiming NOT UPLOADED. Never automatically re-upload on unverified status.
